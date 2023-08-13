@@ -1,0 +1,17 @@
+{
+  "name": "oh!_Studio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tailwindcss": "tailwindcss -i ./src/input.css -o ./dist/css/style.css",
+    "tailwindcss --watch": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch",
+    "tailwindcss --minify": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --minify",
+    "prettier": ""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.2",
+    "tailwindcss": "^3.3.3"
+  }
+}
