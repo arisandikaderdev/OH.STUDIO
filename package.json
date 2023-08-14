@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "tailwindcss": "tailwindcss -i ./src/input.css -o ./dist/css/style.css",
-    "tailwindcss --watch": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch",
+    "tailwindcss": "tailwindcss.exe -i ./src/input.css -o ./dist/css/style.css",
+    "tailwindcss --watch": "tailwindcss.exe -i ./src/input.css -o ./dist/css/style.css --watch",
     "tailwindcss --minify": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --minify",
     "prettier": ""
   },
