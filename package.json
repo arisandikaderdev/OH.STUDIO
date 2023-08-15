@@ -7,7 +7,7 @@
     "tailwindcss": "tailwindcss.exe -i ./src/input.css -o ./dist/css/style.css",
     "tailwindcss --watch": "tailwindcss.exe -i ./src/input.css -o ./dist/css/style.css --watch",
     "tailwindcss --minify": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --minify",
-    "prettier": ""
+    "prettier": "prettier --write ./dist/*.html --plugin=prettier-plugin-tailwindcss"
   },
   "devDependencies": {
     "prettier": "^3.0.1",

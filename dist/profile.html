@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>oh.studio</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,31 +17,31 @@
   </head>
   <body class="">
     <header class="relative">
-      <nav class="fixed top-8 left-[50%] translate-x-[-50%] z-20">
+      <nav class="fixed left-[50%] top-8 z-20 translate-x-[-50%]">
         <ul
-          class="flex gap-4 justify-center bg-primary_white_alpha backdrop-blur-md rounded-full py-3 px-1 text-sm"
+          class="flex justify-center gap-4 rounded-full bg-primary_white_alpha px-1 py-3 text-sm backdrop-blur-md"
         >
           <li>
-            <a href="index.html" class="px-5 py-2 rounded-full">Home</a>
+            <a href="index.html" class="rounded-full px-5 py-2">Home</a>
           </li>
           <li>
             <a
               href="profile.html"
-              class="bg-primary_white px-5 py-2 rounded-full"
+              class="rounded-full bg-primary_white px-5 py-2"
               >Profile</a
             >
           </li>
           <li>
-            <a href="contact.html" class="px-5 py-2 rounded-full">Contact</a>
+            <a href="contact.html" class="rounded-full px-5 py-2">Contact</a>
           </li>
         </ul>
       </nav>
       <button
-        class="fixed flex gap-2 bottom-5 z-20 left-[50%] translate-x-[-50%] bg-black px-5 py-2 rounded-full text-sm text-primary_white"
+        class="fixed bottom-5 left-[50%] z-20 flex translate-x-[-50%] gap-2 rounded-full bg-black px-5 py-2 text-sm text-primary_white"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-white w-4"
+          class="w-4 fill-white"
           viewBox="0 0 16 16"
         >
           <path
@@ -52,11 +53,17 @@
     </header>
     <main class="mt-48">
       <section>
-        <h1 class="text-3xl md:text-5xl lg:text-7xl font-semibold text-center">
+        <h1
+          class="text-center text-3xl font-semibold md:text-5xl lg:text-7xl wow animate__animated animate__fadeInUp"
+          data-wow-duration="2s"
+        >
           Hey 👋🏼 I'm Oli
         </h1>
 
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 px-8 my-52">
+        <div
+          class="my-52 grid grid-cols-1 gap-4 px-8 md:grid-cols-2 wow animate__animated animate__fadeInUp"
+          data-wow-duration="2s"
+        >
           <img
             src="./asset/jessica-weiller-So4eFi-d1nc-unsplash.jpg"
             alt="images"
@@ -70,13 +77,16 @@
         </div>
       </section>
 
-      <section class="text-center max-w-[700px] m-auto my-12">
+      <section
+        class="m-auto my-12 max-w-[700px] text-center wow animate__animated animate__fadeInUp"
+        data-wow-duration="2s"
+      >
         <h3
-          class="text-sm bg-primary_white_alpha px-2 py-1 rounded-full w-max m-auto my-4"
+          class="m-auto my-4 w-max rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
         >
           About
         </h3>
-        <p class="text-2xl lg:text-4xl font-semibold">
+        <p class="text-2xl font-semibold lg:text-4xl">
           A freelance designer based in the UK. I combine my experience in
           product and brand to solve problems, tell stories, and create
           compelling experiences.
@@ -84,153 +94,159 @@
       </section>
 
       <section>
-        <div class="text-center max-w-screen-sm m-auto break-all my-12">
+        <div
+          class="m-auto my-12 max-w-screen-sm break-all text-center wow animate__animated animate__fadeInUp"
+          data-wow-duration="2s"
+        >
           <h3
-            class="text-sm bg-primary_white_alpha px-2 py-1 rounded-full w-max m-auto my-4"
+            class="m-auto my-4 w-max rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
           >
             About
           </h3>
-          <p class="text-2xl lg:text-4xl font-semibold">Where I've worked</p>
+          <p class="text-2xl font-semibold lg:text-4xl">Where I've worked</p>
         </div>
 
-        <div class="grid gap-4 grid-cols-2 md:grid-cols-3">
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2017 - Present</small>
+        <div
+          class="grid grid-cols-2 gap-4 md:grid-cols-3 wow animate__animated animate__fadeInUp"
+          data-wow-duration="2s"
+        >
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2017 - Present</small>
             <p class="font-semibold">OH.STUDIO</p>
-            <small class="text-primary_grey text-sm">Freelance Designer</small>
+            <small class="text-sm text-primary_grey">Freelance Designer</small>
 
             <p>
               <button
-                class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+                class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
               >
                 Director
               </button>
             </p>
           </div>
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2017 - Present</small>
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2017 - Present</small>
             <p class="font-semibold">Freindly Studio</p>
 
-            <small class="text-primary_grey text-sm"
+            <small class="text-sm text-primary_grey"
               >Lead Product Designer</small
             >
 
             <p>
               <button
-                class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+                class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
               >
                 Freelance
               </button>
             </p>
           </div>
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2022</small>
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2022</small>
             <p class="font-semibold">R/GA</p>
-            <small class="text-primary_grey text-sm"
+            <small class="text-sm text-primary_grey"
               >Senior Visual Designer</small
             >
 
             <p>
               <button
-                class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+                class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
               >
                 Freelance
               </button>
             </p>
           </div>
 
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2020</small>
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2020</small>
             <p class="font-semibold">AKQA</p>
-            <small class="text-primary_grey text-sm">Senior Designer</small>
+            <small class="text-sm text-primary_grey">Senior Designer</small>
 
             <p>
               <button
-                class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+                class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
               >
                 Freelance
               </button>
             </p>
           </div>
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2022</small>
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2022</small>
             <p class="font-semibold">R/GA</p>
-            <small class="text-primary_grey text-sm"
+            <small class="text-sm text-primary_grey"
               >Senior Visual Designer</small
             >
 
             <p>
               <button
-                class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+                class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
               >
                 Freelance
               </button>
             </p>
           </div>
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2021</small>
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2021</small>
             <p class="font-semibold">AKQ</p>
-            <small class="text-primary_grey text-sm">Senior Designer</small>
+            <small class="text-sm text-primary_grey">Senior Designer</small>
 
             <p>
               <button
-                class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+                class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
               >
                 Freelance
               </button>
             </p>
           </div>
-          <div class="flex flex-col gap-4 items-center">
+          <div class="flex flex-col items-center gap-4">
             <p>
-              <small class="text-primary_grey text-sm">2022</small>UI Centric
+              <small class="text-sm text-primary_grey">2022</small>UI Centric
             </p>
-            <small class="text-primary_grey text-sm"
+            <small class="text-sm text-primary_grey"
               >Senior Product Designer</small
             >
 
             <button
-              class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+              class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
             >
               Freelance
             </button>
           </div>
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2017</small>
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2017</small>
             <p class="font-semibold">Agency TK</p>
-            <small class="text-primary_grey text-sm"
+            <small class="text-sm text-primary_grey"
               >Senior Digital Designer</small
             >
 
             <p>
               <button
-                class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+                class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
               >
                 Permanent
               </button>
             </p>
           </div>
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2022</small>UI Centric
-            <small class="text-primary_grey text-sm"
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2022</small>UI Centric
+            <small class="text-sm text-primary_grey"
               >Senior Product Designer</small
             >
 
             <button
-              class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+              class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
             >
               Freelance
             </button>
           </div>
-          <div class="flex flex-col gap-4 items-center">
-            <small class="text-primary_grey text-sm">2022</small>
+          <div class="flex flex-col items-center gap-4">
+            <small class="text-sm text-primary_grey">2022</small>
             <p class="font-semibold">R/GA</p>
-            <small class="text-primary_grey text-sm"
+            <small class="text-sm text-primary_grey"
               >Senior Visual Designer</small
             >
 
             <p>
               <button
-                class="bg-primary_white_alpha px-2 py-1 rounded-full text-sm"
+                class="rounded-full bg-primary_white_alpha px-2 py-1 text-sm"
               >
                 Freelance
               </button>
@@ -239,16 +255,19 @@
         </div>
       </section>
 
-      <section class="text-center text-3xl md:text-5xl font-semibold my-44">
+      <section
+        class="my-44 text-center text-3xl font-semibold md:text-5xl wow animate__animated animate__fadeInUp"
+        data-wow-duration="2s"
+      >
         <h2>Let's work together.</h2>
         <h3 class="text-primary_grey"><a href="#">Get in touch.</a></h3>
       </section>
     </main>
 
     <footer
-      class="flex flex-col md:flex-row justify-center md:justify-between items-center px-4 pb-16 md:pb-5"
+      class="flex flex-col items-center justify-center px-4 pb-16 md:flex-row md:justify-between md:pb-5"
     >
-      <p class="flex gap-1 md:gap-4 flex-col md:flex-row items-center">
+      <p class="flex flex-col items-center gap-1 md:flex-row md:gap-4">
         <img src="./asset/asterisk.svg" alt="asterik" class="w-12 md:w-4" />
         &copy; Oli haris 2023
       </p>
@@ -262,5 +281,9 @@
         <li class=""><a href="#">Mail</a></li>
       </ul>
     </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
